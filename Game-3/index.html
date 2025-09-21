@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .display_col_name {
+        display: flex;
+        flex-direction: column;
+          justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 10px;
+        gap: 10px;
+      padding: 5px;
+      }
+      .col-name{
+        border: 1px solid black;
+        border-right: none;
+        height:30px ;
+        width: 70%;
+        outline: none;
+          border-bottom-left-radius: 10px;
+          padding: 5px;
+      }
+      button{
+        height: 30px;
+        width: 45px;
+        border-left: none;
+        background-color: rgb(83, 148, 83);
+        color:white;
+        border-top-right-radius: 10px;
+
+      }
+      span{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="display_col_name">
+      <span>Type The Color Name In Bellow Input</span>
+      <div><input type="text" class="col-name" placeholder="Color For Body" required><button class="Btn">Apply</button></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
